@@ -2,7 +2,7 @@ import { setUtmsToCookie, getUtmsFromCookie } from './utms.js';
 import { getCookie } from './cookie.js';
 import YandexMetrika from './analytics/yandex-metrika.js';
 import MailRuCounter from './analytics/mail-ru-counter.js';
-import { modalBtn, validateCaptcha, formSubmitHandler, captchaModal } from './captcha1.js';
+import { modalBtn, validateCaptcha, formSubmitHandler, captchaModal } from '../components/captcha/captcha.js';
 
 /* eslint-disable class-methods-use-this */
 export default class FormSender {

@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { readdirSync } from 'fs';
-import CopyPlugin from 'copy-webpack-plugin';
+// import CopyPlugin from 'copy-webpack-plugin';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -44,7 +44,7 @@ const config = {
         test: /\.(ico|png|jpe?g|gif|svg|webp|mp4)$/i,
         type: 'asset/resource',
         exclude: /fonts/,
-        generator: { filename: 'assets/[name][ext]' },
+        generator: { filename: 'assets/img/[name][ext]' },
       },
       {
         test: /\.(html)$/i,
@@ -128,14 +128,14 @@ const config = {
       filename: `./${page}`,
       inject: true,
     })),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: resolve(DIRNAME, 'src/assets/img/inner-slider'),
-          to: resolve(DIRNAME, 'dist/assets'),
-        },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: resolve(DIRNAME, 'src/assets/img/inner-slider'),
+    //       to: resolve(DIRNAME, 'dist/assets'),
+    //     },
+    //   ],
+    // }),
   ].concat(isDev ? [] : [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].min.css',

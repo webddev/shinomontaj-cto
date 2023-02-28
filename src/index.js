@@ -1,8 +1,10 @@
 import './.htaccess';
 import './robots.txt';
+import './assets/styles/index.scss';
 import './assets/js/phonemask.js';
-import './assets/js/geo.js';
+import './assets/components/swiper/swiper.js';
 import YandexMetrika from './assets/js/analytics/yandex-metrika.js';
+import createYmapsObject from "./assets/js/yandex-maps.js";
 import MangoOffice from './assets/js/analytics/mango-office.js';
 import Envybox from './assets/js/analytics/envybox.js';
 import FormSender from './assets/js/sender.js';
@@ -35,4 +37,5 @@ const formSender = new FormSender({
 
 document.addEventListener('DOMContentLoaded', () => {
     formSender.init();
+    createYmapsObject();
 });
