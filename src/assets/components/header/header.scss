@@ -30,8 +30,11 @@
   }
 
   &__button {
-    max-width: 173px;
-    padding: 10px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 38px;
     color: $black;
     background: $white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

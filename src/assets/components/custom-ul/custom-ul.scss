@@ -1,0 +1,22 @@
+.custom-ul {
+  list-style-type: none;
+  &__li {
+    position: relative;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    &:not(:last-child) {
+      padding-bottom: 35px;
+    }
+      &::before {
+        content: '';
+        background: url("../img/icons/tick.svg");
+        position: absolute;
+        top: 8px;
+        left: -5px;
+        width: 35px;
+        height: 35px;
+      }
+  }
+}

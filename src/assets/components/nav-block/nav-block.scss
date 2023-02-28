@@ -1,0 +1,81 @@
+.nav {
+  gap: 15px;
+  max-width: 560px;
+  background: #F5F5F5;
+  padding: 25px;
+  border-radius: 30px;
+
+  &__row {
+    display: flex;
+    gap: 15px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+    width: 240px;
+    height: 176px;
+    padding: 20px;
+    background: $white;
+    border-radius: 10px;
+    transition: ease-in-out 0.4s;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 0.2px 2.7px rgba(0, 0, 0, 0.031),
+      0 0.4px 6.5px rgba(0, 0, 0, 0.044),
+      0 0.8px 12.1px rgba(0, 0, 0, 0.055),
+      0 1.3px 21.7px rgba(0, 0, 0, 0.066),
+      0 2.5px 40.5px rgba(0, 0, 0, 0.079),
+      0 6px 97px rgba(0, 0, 0, 0.11);
+      transition: ease-in-out 0.4s;
+
+      &::before {
+        right: 0;
+        transition: ease-in-out 0.5s;
+      }
+      &::after {
+        right: -81px;
+        transition: ease-in-out 0.4s;
+      }
+    }
+
+    &::before {
+      content: '';
+      background: url("../img/models/l1.png") no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 15px;
+      right: -200px;
+      width: 94px;
+      height: 171px;
+      transition: ease-in-out 0.5s;
+      z-index: 2;
+    }
+    &::after {
+      content: '';
+      background: $main-color;
+      position: absolute;
+      bottom: -102px;
+      right: -280px;
+      width: 190px;
+      height: 190px;
+      border-radius: 100%;
+      transition: ease-in-out 0.4s;
+    }
+
+    &_lg {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    max-width: 142px;
+    font-weight: 700;
+    color: $black;
+  }
+}

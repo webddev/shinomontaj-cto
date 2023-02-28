@@ -1,22 +1,27 @@
 .main {
-  background: url("../img/decorations/main-bg.png");
-  &__row {
+  background-size: cover;
+  background: url("../img/decorations/main-bg.png") center;
 
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 67px;
+    padding-bottom: 55px;
   }
 
   &__left {
+    color: $white;
 
   }
 
   &__title {
-
+    max-width: 416px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $white;
   }
 
   &__ul {
-
-  }
-
-  &__li {
-
+    padding-top: 70px;
   }
 }
