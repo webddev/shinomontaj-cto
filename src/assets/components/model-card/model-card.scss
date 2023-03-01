@@ -1,0 +1,88 @@
+.model-card {
+  position: relative;
+  cursor: pointer;
+  max-width: 270px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  perspective: 1000px;
+
+  &:hover {
+
+    .model-card__front {
+      transform: rotateY(180deg);
+    }
+    .model-card__back {
+      transform: rotateY(360deg);
+      box-shadow: 0 0.2px 2.7px rgb(0 0 0 / 3%), 0 0.4px 6.5px rgb(0 0 0 / 4%), 0 0.8px 12.1px rgb(0 0 0 / 6%), 0 1.3px 21.7px rgb(0 0 0 / 7%), 0 2.5px 40.5px rgb(0 0 0 / 8%), 0 6px 97px rgb(0 0 0 / 11%);
+      opacity: 1;
+    }
+  }
+
+  &__front {
+    background-color: $white;
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background-color: $black;
+    color: $white;
+    opacity: 0;
+  }
+  &__back-ul {
+    list-style-type: none;
+    margin: 20px 0;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__back-button {
+    color: $white;
+    background: $main-color;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    b {
+      display: block;
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+  }
+  &__front, &__back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    padding: 20px;
+    transition: ease-in-out 0.4s;
+  }
+
+  &__img {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 900;
+
+    &_front {
+      padding-top: 15px;
+      border-top: 1px solid $main-color;
+    }
+    &_back {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $main-color;
+    }
+  }
+}

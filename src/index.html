@@ -32,18 +32,18 @@
             <div class="main__right">
                 <nav class="nav">
                     <div class="nav__row">
-                        <a href="#" class="nav__item">
+                        <a href="#cars" class="nav__item" data-brunch="cars" data-block="stands">
                             <div class="nav__title">Станки для колес легковых автомобилей</div>
                         </a>
-                        <a href="#" class="nav__item">
+                        <a href="#trucks" class="nav__item" data-brunch="trucks" data-block="stands">
                             <div class="nav__title">Станки для колес грузовых автомобилей</div>
                         </a>
                     </div>
                     <div class="nav__row">
-                        <a href="#" class="nav__item">
+                        <a href="#trucks" class="nav__item" data-brunch="trucks" data-block="balancer">
                             <div class="nav__title">Балансиры для колес грузовых автомобилей</div>
                         </a>
-                        <a href="#" class="nav__item">
+                        <a href="#cars" class="nav__item" data-brunch="cars" data-block="balancer">
                             <div class="nav__title">Балансиры для колес легковых автомобилей</div>
                         </a>
                     </div>
@@ -57,14 +57,156 @@
         </div>
     </section>
     <section class="models container">
-        <div class="models__header-row">
-            <h2 class="models__title title">Для легковых автомобилей</h2>
-            <div class="header__switches switches">
-                <div class="switch switch_active">шиномонтажные станки</div>
-                <div class="switch">балансиры</div>
+        <div id="cars" class="models__section">
+            <div class="models__header-row">
+                <h2 class="models__title title">Для легковых автомобилей</h2>
+                <div class="models__switches switches">
+                    <div class="switch switch_active">шиномонтажные станки</div>
+                    <div class="switch">балансиры</div>
+                </div>
+            </div>
+            <div class="swiper modelsSwiper">
+                <div class="models__model-row stands swiper-wrapper">
+                    <div class="model-card swiper-slide ">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l1.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">NORDBERG <br> 4638</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">NORDBERG <br> 4638</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                    <div class="model-card swiper-slide">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l2.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">ROSSVIK <br> V-524</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">ROSSVIK <br> V-524</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="models__model-row balancer swiper-wrapper">
+                    <div class="model-card swiper-slide ">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l1.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">NORDBERG <br> BALANCER</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">NORDBERG <br> 4638</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                    <div class="model-card swiper-slide">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l2.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">ROSSVIK <br> BALANCER</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">ROSSVIK <br> V-524</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="trucks" class="models__section">
+            <div class="models__header-row">
+                <h2 class="models__title title">Для грузовых автомобилей</h2>
+                <div class="models__switches switches">
+                    <div class="switch switch_active">шиномонтажные станки</div>
+                    <div class="switch">балансиры</div>
+                </div>
+            </div>
+            <div class="swiper modelsSwiper">
+                <div class="models__model-row stands swiper-wrapper">
+                    <div class="swiper-slide model-card">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l1.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">NORDBERG <br> 4638</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">NORDBERG <br> 4638</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide model-card">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l2.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">ROSSVIK <br> V-524</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">ROSSVIK <br> V-524</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 </main>
+<div class="modal modal_sm captcha">
+    <div class="captcha-block">
+        <p class="captcha-block__text"></p>
+        <input type="tel" name="captcha" class="form__input"/>
+        <button class="filled-btn modal__btn" id="captcha-btn">Подтвердить</button>
+    </div>
+</div>
 </body>
 </html>

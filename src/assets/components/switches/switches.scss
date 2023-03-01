@@ -1,0 +1,25 @@
+.switches {
+  display: flex;
+  gap: 10px;
+}
+
+.switch {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: $black;
+  line-height: 1;
+  border: 1px solid $main-color;
+  border-radius: 20px;
+
+  &:hover {
+    background: $main-color;
+    color: $white;
+    transition: ease-in-out 0.3s;
+  }
+
+  &_active {
+    background: $main-color;
+    color: $white;
+    transition: ease-in-out 0.3s;
+  }
+}

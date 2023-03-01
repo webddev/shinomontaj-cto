@@ -44,23 +44,13 @@
       0 1.3px 21.7px rgba(0, 0, 0, 0.066),
       0 2.5px 40.5px rgba(0, 0, 0, 0.079),
       0 6px 97px rgba(0, 0, 0, 0.11);
-      transform: scale(1.07);
+      transform: scale(1.05);
       transition: ease-in-out 0.4s;
 
-      &::before {
-        right: 0;
-        transition: ease-in-out 0.5s;
-        @media (max-width: 575.98px) {
-          right: -22px;
-          top: 34px;
-        }
-      }
       &::after {
-        right: -81px;
+        width: 210px;
+        height: 210px;
         transition: ease-in-out 0.4s;
-        @media (max-width: 575.98px) {
-          bottom: -88px;
-        }
       }
     }
 
@@ -72,12 +62,14 @@
       background-size: contain;
       position: absolute;
       top: 15px;
-      right: -200px;
+      right: 0;
       transition: ease-in-out 0.5s;
       z-index: 2;
       @media (max-width: 575.98px) {
         width: 75px;
         height: 100px;
+        right: -22px;
+        top: 34px;
       }
     }
     &::after {
@@ -85,7 +77,7 @@
       background: $main-color;
       position: absolute;
       bottom: -102px;
-      right: -280px;
+      right: -81px;
       width: 190px;
       height: 190px;
       border-radius: 100%;
@@ -106,7 +98,7 @@
     font-size: 16px;
     font-weight: 700;
     color: $black;
-    @media (max-width: 1099.98px) {
+    @media (max-width: 1199.98px) {
       font-size: 15px;
     }
     @media (max-width: 575.98px) {
