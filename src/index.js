@@ -3,6 +3,7 @@ import './robots.txt';
 import './assets/styles/index.scss';
 import './assets/js/phonemask.js';
 import './assets/components/swiper/swiper.js';
+import './assets/components/header/header.js';
 import YandexMetrika from './assets/js/analytics/yandex-metrika.js';
 import createYmapsObject from "./assets/js/yandex-maps.js";
 import MangoOffice from './assets/js/analytics/mango-office.js';

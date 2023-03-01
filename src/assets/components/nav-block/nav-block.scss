@@ -1,9 +1,15 @@
 .nav {
   gap: 15px;
   max-width: 560px;
-  background: #F5F5F5;
+  background: #f2f2f2;
   padding: 25px;
   border-radius: 30px;
+  @media (max-width: 1199.98px) {
+    max-width: 500px;
+  }
+  @media (max-width: 991.98px) {
+    max-width: 560px;
+  }
 
   &__row {
     display: flex;
@@ -25,6 +31,12 @@
     transition: ease-in-out 0.4s;
     overflow: hidden;
 
+    @media (max-width: 575.98px) {
+      width: 170px;
+      height: 133px;
+      padding: 10px;
+    }
+
     &:hover {
       box-shadow: 0 0.2px 2.7px rgba(0, 0, 0, 0.031),
       0 0.4px 6.5px rgba(0, 0, 0, 0.044),
@@ -32,29 +44,41 @@
       0 1.3px 21.7px rgba(0, 0, 0, 0.066),
       0 2.5px 40.5px rgba(0, 0, 0, 0.079),
       0 6px 97px rgba(0, 0, 0, 0.11);
+      transform: scale(1.07);
       transition: ease-in-out 0.4s;
 
       &::before {
         right: 0;
         transition: ease-in-out 0.5s;
+        @media (max-width: 575.98px) {
+          right: -22px;
+          top: 34px;
+        }
       }
       &::after {
         right: -81px;
         transition: ease-in-out 0.4s;
+        @media (max-width: 575.98px) {
+          bottom: -88px;
+        }
       }
     }
 
     &::before {
       content: '';
+      width: 94px;
+      height: 171px;
       background: url("../img/models/l1.png") no-repeat;
       background-size: contain;
       position: absolute;
       top: 15px;
       right: -200px;
-      width: 94px;
-      height: 171px;
       transition: ease-in-out 0.5s;
       z-index: 2;
+      @media (max-width: 575.98px) {
+        width: 75px;
+        height: 100px;
+      }
     }
     &::after {
       content: '';
@@ -66,6 +90,10 @@
       height: 190px;
       border-radius: 100%;
       transition: ease-in-out 0.4s;
+      @media (max-width: 575.98px) {
+        width: 150px;
+        height: 150px;
+      }
     }
 
     &_lg {
@@ -75,7 +103,14 @@
 
   &__title {
     max-width: 142px;
+    font-size: 16px;
     font-weight: 700;
     color: $black;
+    @media (max-width: 1099.98px) {
+      font-size: 15px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 14px;
+    }
   }
 }
