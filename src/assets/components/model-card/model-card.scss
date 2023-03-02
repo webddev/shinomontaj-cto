@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     transform: rotateY(180deg);
-    background-color: $black;
+    background-color: $main-color;
     color: $white;
     opacity: 0;
   }
@@ -42,8 +42,8 @@
     }
   }
   &__back-button {
-    color: $white;
-    background: $main-color;
+    color: $black;
+    background: $white;
     width: 100%;
     padding: 10px 20px;
     font-size: 16px;
@@ -82,7 +82,7 @@
     }
     &_back {
       padding-bottom: 15px;
-      border-bottom: 1px solid $main-color;
+      border-bottom: 1px solid $white;
     }
   }
 }

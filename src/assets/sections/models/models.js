@@ -1,32 +1,44 @@
-const sortBtnBrunches = document.querySelectorAll('[data-brunch]');
+const sortBtnBranches = document.querySelectorAll('[data-branch]');
+const navItems = document.querySelectorAll('.nav__item');
 
-sortBtnBrunches.forEach((button) => {
+navItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        if (event.currentTarget.dataset.branch) {
+            scrollToBlock(event.currentTarget.dataset.branch);
+        }
+    })
+})
+
+sortBtnBranches.forEach((button) => {
     button.addEventListener('click', (event) => {
-        if (event.currentTarget.dataset.brunch) {
-            showDesiredModels(event.currentTarget.dataset.brunch, event.currentTarget.dataset.block);
+        if (event.currentTarget.dataset.branch) {
+            showDesiredModels(event.currentTarget.dataset.branch, event.currentTarget.dataset.block);
             doSwitchActive(event.currentTarget);
         }
     });
 })
 
-function showDesiredModels(brunch, block) {
-    const desiredBrunch = document.getElementById(`${brunch}`);
-    const allBlocks = desiredBrunch.querySelectorAll('.models__model-row');
+function showDesiredModels(branch, block) {
+    const desiredBranch = document.getElementById(`${branch}`);
+    const allBlocks = desiredBranch.querySelectorAll('.models__model-row');
     allBlocks.forEach((block) => {
         block.style.display = 'none';
     });
-    desiredBrunch.querySelector(`.${block}`).style.display = 'flex';
+    desiredBranch.querySelector(`.${block}`).style.display = 'flex';
 }
 
 function doSwitchActive(clicked) {
-    const switches = document.querySelectorAll('.switch[data-brunch]');
-    switches.forEach((switchh) => {
-        if (clicked.dataset.brunch !== switchh.dataset.brunch) {
-            return
-        }
-        switchh.classList.remove('switch_active');
-        if (clicked.dataset.brunch === switchh.dataset.brunch && clicked.dataset.block === switchh.dataset.block) {
-            switchh.classList.add('switch_active');
+    const switches = document.querySelectorAll('.switch[data-branch]');
+    switches.forEach((switcher) => {
+        if (clicked.dataset.branch !== switcher.dataset.branch) return
+
+        switcher.classList.remove('switch_active');
+        if (clicked.dataset.branch === switcher.dataset.branch && clicked.dataset.block === switcher.dataset.block) {
+            switcher.classList.add('switch_active');
         }
     });
+}
+function scrollToBlock(block) {
+    const modelBlock = document.querySelector(`#${block}`)
+    modelBlock.scrollIntoView();
 }
