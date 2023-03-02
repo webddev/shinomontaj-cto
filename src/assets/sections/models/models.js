@@ -11,7 +11,7 @@ navItems.forEach((item) => {
 
 sortBtnBranches.forEach((button) => {
     button.addEventListener('click', (event) => {
-        if (event.currentTarget.dataset.branch) {
+        if (event.currentTarget.dataset.branch && event.currentTarget.dataset.block) {
             showDesiredModels(event.currentTarget.dataset.branch, event.currentTarget.dataset.block);
             doSwitchActive(event.currentTarget);
         }

@@ -31,24 +31,24 @@
             </div>
             <div class="main__right">
                 <nav class="nav">
-                        <div class="nav__item" data-branch="cars" data-block="stands">
-                            <div class="nav__title">Станки для колес легковых автомобилей</div>
-                        </div>
-                        <div class="nav__item" data-branch="trucks" data-block="stands">
-                            <div class="nav__title">Станки для колес грузовых автомобилей</div>
-                        </div>
-                        <div class="nav__item" data-branch="trucks" data-block="balancer">
-                            <div class="nav__title">Балансиры для колес грузовых автомобилей</div>
-                        </div>
-                        <div class="nav__item" data-branch="cars" data-block="balancer">
-                            <div class="nav__title">Балансиры для колес легковых автомобилей</div>
-                        </div>
-                        <div class="nav__item" data-branch="" data-block="">
-                            <div class="nav__title">Станки для карьерной техники</div>
-                        </div>
-                        <div class="nav__item" data-branch="" data-block="">
-                            <div class="nav__title">Свежая партия итальянских станков</div>
-                        </div>
+                    <div class="nav__item" data-branch="cars" data-block="stands">
+                        <div class="nav__title">Станки для колес легковых автомобилей</div>
+                    </div>
+                    <div class="nav__item" data-branch="trucks" data-block="stands">
+                        <div class="nav__title">Станки для колес грузовых автомобилей</div>
+                    </div>
+                    <div class="nav__item" data-branch="trucks" data-block="balancer">
+                        <div class="nav__title">Балансиры для колес грузовых автомобилей</div>
+                    </div>
+                    <div class="nav__item" data-branch="cars" data-block="balancer">
+                        <div class="nav__title">Балансиры для колес легковых автомобилей</div>
+                    </div>
+                    <div class="nav__item" data-branch="career">
+                        <div class="nav__title">Станки для карьерной техники</div>
+                    </div>
+                    <div class="nav__item" data-branch="cars-premium" data-block="stands">
+                        <div class="nav__title">Свежая партия итальянских станков</div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -157,7 +157,7 @@
                 <div class="models__model-row swiper-wrapper stands">
                     <div class="swiper-slide model-card">
                         <div class="model-card__front">
-                            <img src="assets/img/models/l1.png" class="model-card__img" alt="NORDBERG 4638">
+                            <img src="assets/img/models/g1.png" class="model-card__img" alt="NORDBERG 4638">
                             <div class="model-card__title model-card__title_front">NORDBERG <br> 4638</div>
                         </div>
                         <div class="model-card__back">
@@ -235,6 +235,57 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+        <div id="career" class="models__section">
+            <div class="models__header-row">
+                <h2 class="models__title title">Для карьерной техники</h2>
+                <div class="models__switches switches">
+                    <div class="switch switch_active">шиномонтажные станки</div>
+                </div>
+            </div>
+            <div class="swiper modelsSwiper">
+                <div class="models__model-row swiper-wrapper">
+                    <div class="swiper-slide model-card">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/с1.png" class="model-card__img" alt="ЧЗАО Ш515ЕУ-52">
+                            <div class="model-card__title model-card__title_front">ЧЗАО Ш515ЕУ-52 <br> Ш515ЕУ-52</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">ЧЗАО <br> Ш515ЕУ-52</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Автомат</li>
+                                <li><b>Напряжение питания:</b><br>380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide model-card">
+                        <div class="model-card__front">
+                            <img src="assets/img/models/l2.png" class="model-card__img" alt="NORDBERG 4638">
+                            <div class="model-card__title model-card__title_front">ROSSVIK <br> V-524</div>
+                        </div>
+                        <div class="model-card__back">
+                            <div class="model-card__title model-card__title_back">ROSSVIK <br> V-524</div>
+                            <ul class="model-card__back-ul">
+                                <li><b>Тип:</b> <br> Полуавтомат</li>
+                                <li><b>Напряжение питания:</b><br> 220В / 380В</li>
+                                <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
+                            </ul>
+                            <button class="button model-card__back-button">
+                                <b>92 790 ₽</b>
+                                3 093 ₽ (в кредит)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </section>
     <section class="premium-hero container">
         <img src="assets/img/corghi.png" class="premium-hero__logo" alt="Carghi логотип">
@@ -244,13 +295,38 @@
             Дата следующей партии - неизвестна.
         </div>
         <div id="scene" class="scene">
-            <div data-depth="0.2" data-depth-x="-0.40" class="scene__back"><img src="assets/img/decorations/runline-bg.svg" alt=""></div>
-            <div data-depth="0.6" data-depth-x="0.80" class="scene__front"><img src="assets/img/decorations/runline-front.svg" alt=""></div>
+            <div data-depth="0.2" data-depth-x="-0.40" class="scene__back"><img
+                    src="assets/img/decorations/runline-bg.svg" alt=""></div>
+            <div data-depth="0.6" data-depth-x="0.80" class="scene__front"><img
+                    src="assets/img/decorations/runline-front.svg" alt=""></div>
         </div>
     </section>
     <section class="premium-models container">
-        <div id="cars-premium premium-models__section">
-
+        <!--     TODO сделать служебный общий класс-->
+        <div id="cars-premium" class="premium-models__section">
+            <div class="swiper premiumSwiper">
+                <div class="premium-models__row swiper-wrapper stands">
+                    <div class="premium-model swiper-slide">
+                        <div class="premium-model__textblock">
+                            <h2 class="title premium-model__title">Для легковых <br> автомобилей</h2>
+                            <div class="premium-model__switches switches">
+                                <div class="switch switch_active">шиномонтажные станки</div>
+                                <div class="switch">балансиры</div>
+                            </div>
+                        </div>
+                        <div class="premium-model__img"><img src="assets/img/models/pr1.png" alt=""></div>
+                        <div class="premium-model__card premium-card">
+                            <div class="title premium-card__title">CORGHI <br> A 2002</div>
+                            <ul class="premium-card__ul">
+                                <li><b>Максимальный вес колеса:</b> 200 кг.</li>
+                                <li><b>Максимальная ширина колеса: </b> 1380 мм / 54.5”</li>
+                                <li><b>Максимальная ширина колеса с кожухом:</b> 1220 мм / 48”</li>
+                            </ul>
+                            <button class="button premium-card__button">262 650 ₽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
