@@ -1,29 +1,30 @@
 .nav {
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
   gap: 15px;
   max-width: 560px;
   background: #f2f2f2;
   padding: 25px;
   border-radius: 30px;
   @media (max-width: 1199.98px) {
+    grid-template-columns: repeat(2, 220px);
     max-width: 500px;
   }
   @media (max-width: 991.98px) {
     max-width: 560px;
   }
-
-  &__row {
-    display: flex;
-    gap: 15px;
-
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
+  @media (max-width: 575.98px) {
+    grid-template-columns: repeat(2, 170px);
+    padding: 20px;
+  }
+  @media (max-width: 420.98px) {
+    grid-template-columns: repeat(1, 250px);
+    max-width: 100%;
   }
 
   &__item {
     position: relative;
     cursor: pointer;
-    width: 240px;
     height: 176px;
     padding: 20px;
     background: $white;
@@ -32,9 +33,11 @@
     overflow: hidden;
 
     @media (max-width: 575.98px) {
-      width: 170px;
       height: 133px;
       padding: 10px;
+    }
+    @media (max-width: 420.98px) {
+      height: 180px;
     }
 
     &:hover {
@@ -68,8 +71,14 @@
       @media (max-width: 575.98px) {
         width: 75px;
         height: 100px;
-        right: -22px;
         top: 34px;
+        right: -22px;
+      }
+      @media (max-width: 420.98px) {
+        width: 94px;
+        height: 171px;
+        top: 15px;
+        right: 0;
       }
     }
     &::after {
@@ -86,10 +95,10 @@
         width: 150px;
         height: 150px;
       }
-    }
-
-    &_lg {
-      width: 100%;
+      @media (max-width: 420.98px) {
+        width: 190px;
+        height: 190px;
+      }
     }
   }
 
@@ -103,6 +112,9 @@
     }
     @media (max-width: 575.98px) {
       font-size: 14px;
+    }
+    @media (max-width: 420.98px) {
+      font-size: 16px;
     }
   }
 }

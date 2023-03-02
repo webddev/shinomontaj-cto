@@ -22,9 +22,9 @@ function showDesiredModels(branch, block) {
     const desiredBranch = document.getElementById(`${branch}`);
     const allBlocks = desiredBranch.querySelectorAll('.models__model-row');
     allBlocks.forEach((block) => {
-        block.style.display = 'none';
+        block.classList.add('hidden');
     });
-    desiredBranch.querySelector(`.${block}`).style.display = 'flex';
+    desiredBranch.querySelector(`.${block}`).classList.remove('hidden');
 }
 
 function doSwitchActive(clicked) {
