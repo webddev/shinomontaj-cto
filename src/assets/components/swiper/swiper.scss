@@ -1,5 +1,16 @@
 .modelsSwiper {
   .swiper-pagination {
     text-align: right;
+
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0);
+      border: 2px solid #A3A3A3;
+
+    }
+    .swiper-pagination-bullet-active {
+      background: #A3A3A3;
+      border: 2px solid #A3A3A3;
+    }
   }
 }
+

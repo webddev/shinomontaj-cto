@@ -1,0 +1,10 @@
+.scene {
+  overflow: hidden;
+  padding-bottom: 60px;
+    &__back {
+
+    }
+  &__front {
+    top: -640px!important;
+  }
+}

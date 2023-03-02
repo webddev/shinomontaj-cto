@@ -1,10 +1,9 @@
 import Swiper, {Navigation, Pagination} from 'swiper';
 
 const modelsSwiper = new Swiper(".modelsSwiper", {
-    slidesPerView: 4,
-    slidesPerGroup: 1,
     modules: [Navigation, Pagination],
     spaceBetween: 15,
+    slidesPerGroup: 1,
     pagination: {
         el: ".swiper-pagination",
         type: 'bullets',
@@ -14,6 +13,20 @@ const modelsSwiper = new Swiper(".modelsSwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1199: {
+            slidesPerView: 4,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        575: {
+            slidesPerView: 1,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    }
 });
 
 // const thumbsSlider = new Swiper('.thumbsSlider', {

@@ -40,5 +40,5 @@ function doSwitchActive(clicked) {
 }
 function scrollToBlock(block) {
     const modelBlock = document.querySelector(`#${block}`)
-    modelBlock.scrollIntoView();
+    modelBlock.scrollIntoView({block: 'end'});
 }
