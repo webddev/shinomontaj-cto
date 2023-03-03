@@ -1,5 +1,12 @@
 .premium-model {
   display: flex;
+  justify-content: space-between;
+  @media (max-width: 1199.98px) {
+    gap: 15px;
+  }
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+  }
 
   &__title {
     color: $white;
@@ -31,6 +38,17 @@
   }
 
   &__img {
+    margin-left: -80px;
+    align-self: flex-end;
+    @media (max-width: 1199.98px) {
+      margin-left: -150px;
+      align-self: flex-end;
+    }
+    @media (max-width: 991.98px) {
+      align-self: center;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
     img {
       max-width: 100%;
     }

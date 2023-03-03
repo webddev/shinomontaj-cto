@@ -1,10 +1,15 @@
 .scene {
   overflow: hidden;
   padding-bottom: 60px;
-    &__back {
-      top: -70px!important;
-    }
+  @media (max-width: 1199.98px) {
+    padding-bottom: 0;
+  }
+
+  &__back {
+    top: -70px !important;
+  }
+
   &__front {
-    top: -750px!important;
+    top: -750px !important;
   }
 }

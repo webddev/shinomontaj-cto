@@ -20,7 +20,7 @@ sortBtnBranches.forEach((button) => {
 
 function showDesiredModels(branch, block) {
     const desiredBranch = document.getElementById(`${branch}`);
-    const allBlocks = desiredBranch.querySelectorAll('.models__model-row');
+    const allBlocks = desiredBranch.querySelectorAll('[data-filter=true]');
     allBlocks.forEach((block) => {
         block.classList.add('hidden');
     });
