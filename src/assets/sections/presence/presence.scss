@@ -2,10 +2,22 @@
   padding-top: 130px;
   padding-bottom: 130px;
   background: $white;
+  @media (max-width: 991.98px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 575.98px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   &__row {
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 991.98px){
+      flex-direction: column;
+      gap: 60px;
+    }
   }
 
   &__form-block {
@@ -21,7 +33,9 @@
   }
 
   &__form {
-
+    @media (max-width: 991.98px) {
+      margin-top: 20px;
+    }
   }
 
   &__advantages {
@@ -32,7 +46,7 @@
     li {
       position: relative;
       &:not(:last-child) {
-        margin-bottom: 35px;
+        padding-bottom: 35px;
       }
       &::before {
         content: '';
@@ -42,6 +56,42 @@
         height: 35px;
         top: -2px;
         left: -55px;
+      }
+    }
+    &_desk {
+      @media (max-width: 991.98px) {
+        @include visually-hidden();
+      }
+    }
+    &_mob {
+      display: none;
+      @media (max-width: 991.98px) {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        li {
+          position: relative;
+          max-width: 290px;
+          padding: 10px 0;
+          border-bottom: 1px solid $main-color;
+          &:not(:last-child) {
+            padding-bottom: 10px;
+          }
+          &::before {
+            content: '';
+            background: url("../img/icons/tick-simple.svg") no-repeat;
+            position: absolute;
+            width: 24px;
+            height: 18px;
+            top: 25px;
+            left: initial;
+            right: -42px;
+          }
+        }
+      }
+      @media (max-width: 575.98px) {
+        margin: 0;
       }
     }
   }
