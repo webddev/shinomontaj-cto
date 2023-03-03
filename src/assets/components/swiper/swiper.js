@@ -21,7 +21,7 @@ const modelsSwiper = new Swiper(".modelsSwiper", {
             slidesPerView: 3,
         },
         575: {
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         0: {
             slidesPerView: 1,
