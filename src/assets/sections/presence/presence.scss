@@ -30,6 +30,9 @@
 
   &__text {
     margin-bottom: 35px;
+    @media (max-width: 575.98px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -72,9 +75,17 @@
         margin-right: auto;
         li {
           position: relative;
-          max-width: 290px;
-          padding: 10px 0;
+          padding: 10px 170px 10px 0;
           border-bottom: 1px solid $main-color;
+          @media (max-width: 575.98px) {
+            padding: 10px 120px 10px 0;
+          }
+          @media (max-width: 420.98px) {
+            padding: 10px 100px 10px 0;
+          }
+          @media (max-width: 360.98px) {
+            padding: 10px 60px 10px 0;
+          }
           &:not(:last-child) {
             padding-bottom: 10px;
           }
@@ -86,7 +97,7 @@
             height: 18px;
             top: 25px;
             left: initial;
-            right: -42px;
+            right: 15px;
           }
         }
       }

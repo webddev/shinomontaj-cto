@@ -20,6 +20,9 @@
   &__switches {
     flex-direction: column;
     gap: 17px;
+    @media (max-width: 991.98px) {
+        gap: 10px;
+    }
 
     .switch {
       width: fit-content;

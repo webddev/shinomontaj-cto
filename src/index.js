@@ -7,6 +7,7 @@ import './assets/components/swiper/swiper.js';
 import './assets/sections/models/models.js';
 import './assets/components/parallax/parallax.min.js';
 import './assets/components/parallax/parallax-cust.js';
+import './assets/components/model-card/model-card.js';
 import YandexMetrika from './assets/js/analytics/yandex-metrika.js';
 import createYmapsObject from "./assets/js/yandex-maps.js";
 import MangoOffice from './assets/js/analytics/mango-office.js';
