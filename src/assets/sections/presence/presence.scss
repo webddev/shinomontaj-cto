@@ -1,0 +1,48 @@
+.presence {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: $white;
+
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form-block {
+    max-width: 475px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__form {
+
+  }
+
+  &__advantages {
+    max-width: 360px;
+  }
+
+  &__ul {
+    li {
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+      &::before {
+        content: '';
+        background: url("../img/icons/tick-white.svg");
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: -2px;
+        left: -55px;
+      }
+    }
+  }
+}
