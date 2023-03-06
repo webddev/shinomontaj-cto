@@ -92,6 +92,12 @@ ul {
   opacity: 0 !important;
   transition: 1.2s;
 }
+.text {
+  color: $black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
 
 .line-through {
   text-decoration: line-through;

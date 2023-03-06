@@ -1,0 +1,21 @@
+.offer {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: $main-color;
+  &__row {
+    justify-content: space-between;
+  }
+  &__title {
+    color: $white;
+    max-width: 650px;
+  }
+
+  &__item {
+    background: $white;
+    padding: 40px;
+    border-radius: 30px;
+    &:first-child {
+    }
+  }
+}
+
