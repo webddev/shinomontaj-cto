@@ -47,7 +47,7 @@ const headerHideHandler = throttle(function() {
 function changeContent(media) {
     if (media.matches) {
         const headerButton = header.querySelector('.header__button');
-        headerButton.innerHTML = '<img src="assets/img/icons/phone.svg" alt="Кнопка заказать звонок" width="30" height="30">'
+        headerButton.innerHTML = '<img src="assets/img/phone.svg" width="22" height="22" alt="Кнопка заказать звонок">'
     }
 }
 
