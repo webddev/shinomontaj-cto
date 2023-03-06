@@ -7,12 +7,20 @@
       border: 2px solid #A3A3A3;
 
     }
+
     .swiper-pagination-bullet-active {
       background: #A3A3A3;
       border: 2px solid #A3A3A3;
     }
   }
+
+  .swiper .swiper-button-next, .swiper-button-prev {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
 }
+
 .swiper .swiper-button-next, .swiper-button-prev {
   width: 42px;
   height: 42px;
@@ -22,13 +30,96 @@
   text-align: center;
   background-color: $white;
   border-radius: 50%;
-  box-shadow: 0px 10px 20px rgba(91, 91, 91, 0.2);
-  @media (max-width: 575.98px) {
-    display: none;
-  }
+  box-shadow: 0 10px 20px rgba(91, 91, 91, 0.2);
 
   &::after {
     font-size: 13px;
     font-weight: 800;
+  }
+}
+
+.premiumSwiper {
+  transition: 1.2s;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 400px;
+    @media (max-width: 991.98px) {
+      left: 0;
+      right: auto;
+      top: 73%;
+    }
+  }
+
+  .swiper-button-next {
+    left: auto;
+    right: 0;
+    @media (max-width: 991.98px) {
+      top: 73%;
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-progressbar {
+    width: 340px;
+    top: auto;
+    left: auto;
+    bottom: 108px;
+    right: 45px;
+
+    @media (max-width: 1199.98px) {
+      width: 320px;
+      bottom: 75px;
+      right: 45px;
+    }
+    @media (max-width: 991.98px) {
+      width: 341px;
+      bottom: 24px;
+      right: 193px;
+    }
+    @media (max-width: 767.98px) {
+      right: 100px;
+    }
+    @media (max-width: 575.98px) {
+      right: 90px;
+      bottom: 25px;
+    }
+    @media (max-width: 530.98px) {
+      right: 75px;
+    }
+    @media (max-width: 500.98px) {
+      right: 60px;
+    }
+    @media (max-width: 470.98px) {
+      right: 40px;
+    }
+    @media (max-width: 450.98px) {
+      right: 30px;
+    }
+    @media (max-width: 420.98px) {
+      right: 20px;
+    }
+    @media (max-width: 400.98px) {
+      right: 10px;
+    }
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background: $yellow;
   }
 }

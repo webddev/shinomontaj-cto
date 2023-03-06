@@ -1,11 +1,7 @@
 .premium-model {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   @media (max-width: 1199.98px) {
-    gap: 15px;
-  }
-  @media (max-width: 991.98px) {
-    flex-direction: column;
+
   }
 
   &__title {
@@ -14,7 +10,11 @@
   }
 
   &__textblock {
+    position: absolute;
+    top: 40px;
+    left: 0;
     flex-shrink: 0;
+    z-index: 5;
   }
 
   &__switches {
@@ -41,23 +41,33 @@
   }
 
   &__img {
-    margin-left: -80px;
     align-self: flex-end;
     @media (max-width: 1199.98px) {
-      margin-left: -150px;
-      align-self: flex-end;
+
     }
     @media (max-width: 991.98px) {
       align-self: center;
       margin-left: 0;
-      margin-bottom: 20px;
     }
     img {
       max-width: 100%;
+      @media (max-width: 1199.98px) {
+        max-width: 80%;
+      }
+      @media (max-width: 991.98px) {
+        max-width: 100%;
+        padding-top: 30px;
+      }
+      @media (max-width: 575.98px) {
+        padding-top: 80px;
+      }
     }
   }
 
   &__card {
-
+    margin-right: 50px;
+    @media (max-width: 991.98px) {
+      margin-right: 0;
+    }
   }
 }

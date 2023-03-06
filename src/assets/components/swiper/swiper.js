@@ -29,6 +29,21 @@ const modelsSwiper = new Swiper(".modelsSwiper", {
     }
 });
 
+const premiumSwiper = new Swiper(".premiumSwiper", {
+    modules: [Navigation, Pagination],
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 // const thumbsSlider = new Swiper('.thumbsSlider', {
 //   slidesPerView: 6,
 //   slidesPerGroup: 1,

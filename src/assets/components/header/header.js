@@ -1,6 +1,6 @@
 let prevScrollpos = window.scrollY;
 const header = document.querySelector(".header");
-const mobileWidth = window.matchMedia('(max-width: 420.98px)');
+const mobileWidth = window.matchMedia('(max-width: 402.98px)');
 
 function throttle(func, ms) {
 

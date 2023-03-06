@@ -7,9 +7,15 @@
 
   &__back {
     top: -70px !important;
+    @media (max-width: 575.98px) {
+      top: -150px !important;
+    }
   }
 
   &__front {
     top: -750px !important;
+    @media (max-width: 575.98px) {
+      top: -858px !important;
+    }
   }
 }
