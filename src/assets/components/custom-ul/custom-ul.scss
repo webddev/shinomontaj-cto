@@ -5,6 +5,10 @@
     justify-content: space-between;
     gap: 15px;
   }
+  @media (max-width: 575.98px) {
+    justify-content: center;
+    gap: 20px;
+  }
 
   &__li {
     position: relative;
@@ -16,6 +20,11 @@
     &:not(:last-child) {
       padding-bottom: 35px;
     }
+    &:last-child {
+      @media (max-width: 767.98px) {
+        max-width: 100px;
+      }
+    }
 
     @media (max-width: 991.98px) {
       max-width: 180px;
@@ -25,6 +34,9 @@
     @media (max-width: 767.98px) {
       max-width: 165px;
       font-size: 18px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 16px;
     }
 
     &::before {
@@ -40,7 +52,16 @@
         left: 58px;
       }
       @media (max-width: 767.98px) {
-        left: 50px;
+        left: 42px;
+      }
+      @media (max-width: 575.98px) {
+        left: 36px;
+      }
+      @media (max-width: 375.98px) {
+        left: 32px;
+      }
+      @media (max-width: 355.98px) {
+        left: 30px;
       }
     }
 
@@ -51,7 +72,7 @@
         }
         @media (max-width: 767.98px) {
           &::before {
-            left: 67px;
+            left: 35px;
           }
         }
       }

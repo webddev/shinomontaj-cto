@@ -1,5 +1,6 @@
 let prevScrollpos = window.scrollY;
 const header = document.querySelector(".header");
+const mobileWidth = window.matchMedia('(max-width: 420.98px)');
 
 function throttle(func, ms) {
 
@@ -43,4 +44,13 @@ const headerHideHandler = throttle(function() {
     prevScrollpos = currentScrollPos;
 }, 400)
 
-window.addEventListener('scroll', headerHideHandler)
+function changeContent(media) {
+    if (media.matches) {
+        const headerButton = header.querySelector('.header__button');
+        headerButton.innerHTML = '<img src="assets/img/icons/phone.svg" alt="Кнопка заказать звонок" width="30" height="30">'
+    }
+}
+
+changeContent(mobileWidth);
+
+window.addEventListener('scroll', headerHideHandler);
