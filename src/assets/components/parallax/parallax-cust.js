@@ -7,7 +7,6 @@ document.addEventListener('scroll', function () {
     if (posTop < window.innerHeight) {
         const parallaxInstance = new Parallax(scene, {
             relativeInput: true,
-            // hoverOnly: true,
         });
     }
 });

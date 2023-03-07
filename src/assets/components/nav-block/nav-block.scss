@@ -14,12 +14,8 @@
     max-width: 560px;
   }
   @media (max-width: 575.98px) {
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-  }
-  @media (max-width: 420.98px) {
-    grid-template-columns: repeat(1, 250px);
-    max-width: 100%;
   }
 
   &__item {
@@ -28,16 +24,17 @@
     height: 176px;
     padding: 20px;
     background: $white;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: ease-in-out 0.4s;
     overflow: hidden;
 
     @media (max-width: 575.98px) {
       height: 133px;
       padding: 10px;
+      border-radius: 13px;
     }
     @media (max-width: 420.98px) {
-      height: 180px;
+      height: 150px;
     }
 
     &:hover {
@@ -54,6 +51,10 @@
         width: 210px;
         height: 210px;
         transition: ease-in-out 0.4s;
+        @media (max-width: 575.98px) {
+          width: 175px;
+          height: 175px;
+        }
       }
     }
 
@@ -75,10 +76,10 @@
         right: -22px;
       }
       @media (max-width: 420.98px) {
-        width: 94px;
-        height: 171px;
-        top: 15px;
-        right: 0;
+        width: 65px;
+        height: 110px;
+        top: 45px;
+        right: -8px;
       }
     }
     &::after {
@@ -96,8 +97,8 @@
         height: 150px;
       }
       @media (max-width: 420.98px) {
-        width: 190px;
-        height: 190px;
+        width: 160px;
+        height: 160px;
       }
     }
   }
@@ -114,7 +115,7 @@
       font-size: 14px;
     }
     @media (max-width: 420.98px) {
-      font-size: 16px;
+      font-size: 13px;
     }
   }
 }

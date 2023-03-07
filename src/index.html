@@ -15,7 +15,7 @@
     </div>
     <div class="header__right">
         <a href="tel:+78005001436" class="header__phone fw-700 color-w mgo-number">8 (800) 500 - 14 - 36</a>
-        <button class="button header__button fw-500">Заказать звонок</button>
+        <button class="button header__button fw-500" data-modal="true">Заказать звонок</button>
     </div>
 </header>
 <main>
@@ -696,9 +696,9 @@
                     </form>
                     <div class="offer-item__grey-text offer-item__grey-text_lg grey-text">Наши заявки обрабатываются вне очереди, поэтому решение занимает менее 45 минут.</div>
                     <div class="media-row">
-                        <img src="assets/img/icons/fera.svg" alt="Сбербанк">
-                        <img src="assets/img/icons/arenza.svg" alt="Почтабанк">
-                        <img src="assets/img/icons/mk.svg" alt="Тиньков банк">
+                        <img src="assets/img/icons/fera.svg" alt="Фера">
+                        <img src="assets/img/icons/arenza.svg" alt="Аренза">
+                        <img src="assets/img/icons/mk.svg" alt="МК банк">
                     </div>
                 </div>
             </div>
@@ -736,13 +736,51 @@
             </div>
         </div>
     </section>
+    <section class="questions container">
+        <h2 class="questions__title title">ЗАДАЙТЕ ВОПРОСЫ НАШИМ КЛИЕНТАМ В СВОЁМ ГОРОДЕ О СКОРОСТИ ПОСТАВКИ И КАЧЕСТВЕ ОБОРУДОВАНИЯ</h2>
+        <div class="questions__header-row row">
+            <div class="questions__header-item">Выберите свой город</div>
+            <div class="questions__header-item"><div>Позвоните реальному клиенту, купившему оборудование</div></div>
+        </div>
+        <div class="questions__info-row row">
+            <div class="questions__info-item">
+                <div class="questions__num">538</div>
+                <div class="questions__info-text">Городов поставок <br> за 2022 г.</div>
+            </div>
+            <div class="questions__info-item">
+                <div class="questions__num">186</div>
+                <div class="questions__info-text">Открыто новых <br> шиномонтажей за 2022 г.</div>
+            </div>
+            <div class="questions__info-item">
+                <div class="questions__num">451</div>
+                <div class="questions__info-text">Доукомплектовано <br> автосервисов в 2022 г.</div>
+            </div>
+            <div class="questions__info-item">
+                <div class="questions__num">3327</div>
+                <div class="questions__info-text">Единиц оборудования <br> в ассортименте</div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
 </main>
 <div class="modal modal_sm captcha">
     <div class="captcha-block">
         <p class="captcha-block__text text"></p>
         <input type="tel" name="captcha" class="form__input"/>
-        <button class="filled-btn modal__btn" id="captcha-btn">Подтвердить</button>
+        <button class="button form__button" id="captcha-btn">Подтвердить</button>
     </div>
+</div>
+<div class="modal callback-modal">
+    <h3 class="modal__title">Заявка на </h3>
+    <p class="modal__text">
+        В ближайшее время вам перезвонит
+    </p>
+    <form class="form">
+        <input type="hidden" name="comment" value="Заявка на ">
+        <input type="text" placeholder="Имя" name="name" class="form__input">
+        <input type="tel" placeholder="+7(___)___-__-__" name="phone" class="form__input" required>
+        <button type="submit" class="form__button button">Оставить заявку</button>
+    </form>
 </div>
 </body>
 </html>

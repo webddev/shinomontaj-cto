@@ -68,7 +68,7 @@ function openCaptchaModal() {
 
 function formSubmitHandler() {
   const fancyboxContainer = document.querySelector('.fancybox__container');
-  fancyboxContainer.querySelector('.is-close').click();
+  fancyboxContainer?.querySelector('.is-close').click();
 
   setTimeout(openCaptchaModal, 100);
 

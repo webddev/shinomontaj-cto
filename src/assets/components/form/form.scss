@@ -4,11 +4,12 @@
   align-items: center;
 
   &__input {
+    width: 100%;
     text-align: center;
     border: none;
     padding: 17px 0;
     margin-bottom: 17px;
-    background: rgba(255, 255, 255, 0);
+    background: $light-bg;
     &::placeholder {
       font-size: 15px;
       font-weight: 500;

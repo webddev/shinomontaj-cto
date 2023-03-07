@@ -1,0 +1,136 @@
+.questions {
+  background: $white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: 991.98px) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @media (max-width: 575.98px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__header-row {
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__header-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 560px;
+    width: 100%;
+    min-height: 70px;
+    padding: 15px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background: $main-color;
+    border-radius: 10px;
+    @media (max-width: 991.98px) {
+      max-width: 100%;
+    }
+    @media (max-width: 500.98px) {
+      padding-left: 65px;
+    }
+
+    &:first-child {
+      &::before {
+        content: '1';
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        background: $white;
+        color: $black;
+        font-size: 28px;
+        font-weight: 900;
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+    }
+
+    &:nth-child(2) {
+      & div {
+        max-width: 300px;
+      }
+
+      &::before {
+        content: '2';
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        background: $white;
+        color: $black;
+        font-size: 28px;
+        font-weight: 900;
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__info-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 575.98px) {
+      gap: 10px;
+    }
+  }
+
+  &__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: $light-bg;
+    border-radius: 10px;
+    @media (max-width: 575.98px) {
+      padding: 10px;
+    }
+  }
+
+  &__num {
+    color: $black;
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: 900;
+    margin-bottom: 5px;
+    @media (max-width: 575.98px) {
+      font-size: 22px;
+    }
+  }
+
+  &__info-text {
+    color: $black;
+    text-align: center;
+    @media (max-width: 575.98px) {
+      font-size: 12px;
+    }
+  }
+
+  #map {
+    height: 500px;
+    margin-top: 40px;
+    & > iframe {
+      border-radius: 30px;
+    }
+  }
+}
