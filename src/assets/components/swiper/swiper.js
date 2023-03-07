@@ -44,6 +44,21 @@ const premiumSwiper = new Swiper(".premiumSwiper", {
     },
 });
 
+const deliverySwiper = new Swiper(".deliverySwiper", {
+    modules: [Navigation, Pagination],
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 // const thumbsSlider = new Swiper('.thumbsSlider', {
 //   slidesPerView: 6,
 //   slidesPerGroup: 1,

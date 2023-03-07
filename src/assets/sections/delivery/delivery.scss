@@ -1,0 +1,75 @@
+.delivery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: $light-bg;
+  @media (max-width: 1199.98px) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @media (max-width: 575.98px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    &:first-child {
+      max-width: 460px;
+      @media (max-width: 1199.98px) {
+        max-width: 400px;
+      }
+      @media (max-width: 991.98px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__grey-text {
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+
+  &__ul {
+    margin-bottom: 40px;
+
+    li {
+      padding-top: 20px;
+      position: relative;
+      @media (max-width: 991.98px) {
+        padding-right: 60px;
+        &::before {
+          content: '';
+          background: url("../img/icons/tick-simple.svg") no-repeat;
+          position: absolute;
+          width: 24px;
+          height: 18px;
+          top: 25px;
+          left: initial;
+          right: 15px;
+        }
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+  }
+
+  &__button {
+
+  }
+}
