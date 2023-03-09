@@ -62,8 +62,6 @@
       content: '';
       width: 94px;
       height: 171px;
-      background: url("../img/models/l1.png") no-repeat;
-      background-size: contain;
       position: absolute;
       top: 15px;
       right: 0;
@@ -82,6 +80,7 @@
         right: -8px;
       }
     }
+
     &::after {
       content: '';
       background: $main-color;
@@ -99,6 +98,146 @@
       @media (max-width: 420.98px) {
         width: 160px;
         height: 160px;
+      }
+    }
+
+    &_stand-l {
+      &::before {
+        background: url("../img/models/stands-l/nord-4638.png") no-repeat;
+        background-size: contain;
+      }
+
+    }
+
+    &_stand-g {
+      &::before {
+        background: url("../img/models/nav/nav-st-g.png") no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 148px;
+        top: 45px;
+        right: -41px;
+        @media (max-width: 575.98px) {
+          width: 94px;
+          height: 97px;
+          top: 52px;
+          right: -27px;
+        }
+        @media (max-width: 420.98px) {
+          width: 104px;
+          top: 62px;
+          right: -32px;
+        }
+      }
+    }
+
+    &_bal-g {
+      &::before {
+        background: url("../img/models/nav/nav-bal-g.png") no-repeat;
+        background-size: contain;
+        width: 152px;
+        height: 149px;
+        top: 24px;
+        right: -9px;
+        @media (max-width: 575.98px) {
+          width: 107px;
+          height: 107px;
+          top: 30px;
+          right: -4px;
+        }
+        @media (max-width: 420.98px) {
+          top: 40px;
+          right: -4px;
+        }
+      }
+    }
+
+    &_bal-l {
+      &::before {
+        background: url("../img/models/nav/nav-bal-l.png") no-repeat;
+        background-size: contain;
+        @media (max-width: 575.98px) {
+          top: 30px;
+          right: -15px;
+        }
+        @media (max-width: 420.98px) {
+          top: 38px;
+          right: -1px;
+        }
+      }
+    }
+
+    &_stand-c {
+      &::before {
+        background: url("../img/models/nav/nav-c.png") no-repeat;
+        background-size: contain;
+        width: 133px;
+        height: 130px;
+        top: 62px;
+        right: 0;
+        @media (max-width: 575.98px) {
+          width: 95px;
+          height: 95px;
+          top: 56px;
+          right: -4px;
+        }
+
+        @media (max-width: 420.98px) {
+          width: 100px;
+          height: 100px;
+          top: 71px;
+          right: -4px;
+        }
+      }
+    }
+
+    &_premium {
+      &::before {
+        background: url("../img/models/nav/nav-prem.png") no-repeat;
+        background-size: contain;
+        top: 4px;
+        @media (max-width: 575.98px) {
+          width: 85px;
+          height: 110px;
+          top: 21px;
+          right: -31px;
+        }
+
+        @media (max-width: 420.98px) {
+          height: 114px;
+          top: 35px;
+        }
+      }
+      .nav__title {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          background: url("../img/corghi-black.svg") no-repeat;
+          background-size: contain;
+          width: 100px;
+          height: 28px;
+          top: 111px;
+          left: 0;
+          z-index: 222;
+          @media (max-width: 1199.98px) {
+            width: 80px;
+            top: 115px;
+          }
+          @media (max-width: 575.98px) {
+            width: 70px;
+            top: 92px;
+            left: 4px;
+          }
+          @media (max-width: 420.98px) {
+            top: 58px;
+            left: 1px;
+          }
+          @media (max-width: 350.98px) {
+            width: 55px;
+            top: 70px;
+          }
+        }
       }
     }
   }

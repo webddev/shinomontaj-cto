@@ -1,4 +1,5 @@
 .modelsSwiper {
+  transition: ease 0.5s;
   .swiper-pagination {
     text-align: right;
   }
@@ -10,7 +11,7 @@
   }
 }
 
-.swiper .swiper-button-next, .swiper-button-prev {
+.swiper-button-next, .swiper-button-prev {
   width: 42px;
   height: 42px;
   border: none;
