@@ -1,11 +1,6 @@
 .offer {
-  padding-top: 75px;
-  padding-bottom: 75px;
   background: $main-color;
-  @media (max-width: 575.98px) {
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
+
   &__row {
     justify-content: space-between;
     @media (max-width: 1199.98px) {
