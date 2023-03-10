@@ -1,4 +1,6 @@
 .premium-hero {
+  padding-bottom: 0;
+  max-height: 820px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,6 +8,12 @@
   background: rgba(0, 0, 0) url("../img/decorations/premium-bg.png") no-repeat center;
   text-align: center;
   color: $white;
+  @media (max-width: 991.98px) {
+    max-height: 750px;
+  }
+  @media (max-width: 575.98px) {
+    max-height: 550px;
+  }
 
   &__logo {
     margin-top: 30px;
