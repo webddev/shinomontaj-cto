@@ -1,0 +1,23 @@
+.footer {
+  background: $black;
+  &__row {
+    justify-content: center;
+    gap: 30px;
+  }
+  &__item {
+
+  }
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    img {
+      width: 101px;
+      height: 101px;
+    }
+  }
+  &__logo-text {
+    font-size: 25px;
+    color: $white;
+  }
+}
