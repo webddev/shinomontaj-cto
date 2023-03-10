@@ -1,6 +1,7 @@
 .offer-item {
   max-width: 542px;
   width: 100%;
+  transition: ease-in-out 0.3s;
 
   &__wrapper {
     background: $white;
