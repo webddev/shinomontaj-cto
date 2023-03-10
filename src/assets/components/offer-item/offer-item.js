@@ -1,5 +1,12 @@
 const offerItems = document.querySelectorAll('.offer-item');
-offerItems.forEach((item) => {
+
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (!target.closest('.offer-item')) {
+        changeOpacity();
+    }
+})
+offerItems?.forEach((item) => {
     const offerInputs = item.querySelectorAll('.form__input');
     offerInputs.forEach((input) => {
         input.addEventListener('click', (event) => {
@@ -8,8 +15,16 @@ offerItems.forEach((item) => {
     })
 })
 function changeOpacity(focused) {
-    offerItems.forEach((item) => {
-        item.style.opacity = 0.6;
-    })
-    focused.closest('.offer-item').style.opacity = 1;
+    if (focused) {
+        offerItems.forEach((item) => {
+            item.style.opacity = 0.6;
+        })
+        focused.closest('.offer-item').style.opacity = 1;
+    }
+    else {
+        offerItems.forEach((item) => {
+            item.style.opacity = 1;
+        })
+    }
 }
+
