@@ -3,12 +3,14 @@
 
   &__row {
     justify-content: space-between;
+    background: $white url("../img/decorations/presence-bg.png") no-repeat right;
+    background-size: contain;
     align-items: center;
-    background: $white;
     padding: 30px;
     border-radius: 30px;
     @media (max-width: 991.98px) {
       flex-direction: column;
+      background: $white;
     }
   }
 

@@ -1,10 +1,9 @@
 .premium-card {
   display: flex;
   flex-direction: column;
-  height: fit-content;
   max-width: 340px;
   width: 100%;
-  padding: 30px 30px 20px;
+  padding: 25px;
   background: $white;
   border-radius: 30px;
   @media (max-width: 1199.98px) {
@@ -20,14 +19,18 @@
   }
 
   &__title {
+    font-size: 23px;
     color: $black;
     padding-bottom: 15px;
     border-bottom: 5px solid $yellow;
+    @media (max-width: 575.98px) {
+      font-size: 22px;
+    }
   }
 
   &__ul {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     @media (max-width: 1199.98px) {
       padding: 0;
     }
@@ -47,6 +50,7 @@
     font-weight: 900;
     color: $black;
     background: $yellow;
+    margin-top: auto;
     padding: 15px 20px;
   }
 }
