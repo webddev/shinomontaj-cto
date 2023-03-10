@@ -1,23 +1,59 @@
 .footer {
   background: $black;
+
   &__row {
     justify-content: center;
     gap: 30px;
+    @media (max-width: 1199.98px) {
+      gap: 20px;
+    }
+    @media (max-width: 991.98px) {
+      display: grid;
+      grid-template-areas: 'logo 2gis'
+      'rusprof avito';
+    }
   }
+
   &__item {
 
   }
+
   &__logo {
     display: flex;
     align-items: flex-end;
     gap: 20px;
+    grid-area: logo;
+    @media (max-width: 1099.98px) {
+      gap: 10px;
+    }
+
     img {
       width: 101px;
       height: 101px;
+      @media (max-width: 1099.98px) {
+        width: 90px;
+        height: 90px;
+      }
     }
   }
+
   &__logo-text {
     font-size: 25px;
     color: $white;
+    @media (max-width: 1099.98px) {
+      font-size: 20px;
+    }
+  }
+
+  &__rusprofile {
+    grid-area: rusprof;
+  }
+
+  &__avito {
+    grid-area: avito;
+  }
+
+  &__2gis {
+    grid-area: 2gis;
   }
 }
