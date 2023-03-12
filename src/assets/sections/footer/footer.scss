@@ -34,6 +34,10 @@
         width: 90px;
         height: 90px;
       }
+      @media (max-width: 575.98px) {
+        width: 55px;
+        height: 55px;
+      }
     }
   }
 
@@ -42,6 +46,9 @@
     color: $white;
     @media (max-width: 1099.98px) {
       font-size: 20px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 15px;
     }
   }
 

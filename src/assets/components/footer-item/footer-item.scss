@@ -10,6 +10,9 @@
   @media (max-width: 1099.98px) {
     padding: 15px;
   }
+  @media (max-width: 575.98px) {
+    padding: 10px;
+  }
 
   &:hover {
     filter: drop-shadow(1px 0px 2px rgba(255, 255, 255, 0.60));
@@ -19,12 +22,25 @@
   &__logo {
     max-width: 100%;
     margin-bottom: 10px;
+    @media (max-width: 575.98px) {
+      margin-bottom: 5px;
+    }
+
+    img {
+      @media (max-width: 575.98px) {
+        max-width: 80%;
+      }
+    }
   }
 
   &__text {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 10px;
+    @media (max-width: 575.98px) {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
   }
 
   &__rating {
