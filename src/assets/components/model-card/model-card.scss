@@ -13,8 +13,13 @@
     transition: ease 0.4s;
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.04);
       transition: ease 0.4s;
+    }
+    @media (max-width: 991.98px) {
+      &:hover {
+        transform: none;
+      }
     }
   }
 

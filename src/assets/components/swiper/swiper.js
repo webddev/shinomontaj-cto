@@ -41,6 +41,28 @@ const premiumSwiper = new Swiper(".premiumSwiper", {
     },
 });
 
+const tariffSwiper = new Swiper(".tariffSwiper", {
+    modules: [Pagination],
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    slidesPerView: 3,
+    pagination: {
+        el: ".swiper-pagination",
+        type: 'bullets',
+    },
+    breakpoints: {
+        1099: {
+            slidesPerView: 3,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    }
+});
+
 const deliverySwiper = new Swiper(".deliverySwiper", {
     modules: [Navigation, Pagination],
     spaceBetween: 15,

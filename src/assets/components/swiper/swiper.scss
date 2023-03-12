@@ -2,6 +2,7 @@
   transition: ease 0.5s;
   .swiper-pagination {
     text-align: right;
+    bottom: 0;
   }
 
    .swiper-button-next, .swiper-button-prev {
@@ -12,7 +13,12 @@
     }
   }
 }
-
+.tariffSwiper {
+  .swiper-pagination {
+    text-align: right;
+    bottom: 0;
+  }
+}
 .swiper-button-next, .swiper-button-prev {
   width: 42px;
   height: 42px;
