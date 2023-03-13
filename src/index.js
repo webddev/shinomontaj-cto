@@ -2,6 +2,7 @@ import './.htaccess';
 import './robots.txt';
 import './assets/styles/index.scss';
 import './assets/js/phonemask.js';
+import './assets/js/get-prices.js';
 import './assets/components/header/header.js';
 import './assets/components/swiper/swiper.js';
 import './assets/components/parallax/parallax.min.js';
@@ -17,6 +18,7 @@ import MangoOffice from './assets/js/analytics/mango-office.js';
 import Envybox from './assets/js/analytics/envybox.js';
 import FormSender from './assets/js/sender.js';
 import Roistat from './assets/js/analytics/roistat.js';
+import Quiz from "./assets/components/quiz/quiz.js";
 
 const analyticsTimeout = setTimeout(() => {
     new YandexMetrika([{
@@ -42,6 +44,9 @@ const formSender = new FormSender({
     source: '',
     type: '',
 });
+
+const quiz = new Quiz();
+quiz.init();
 
 document.addEventListener('DOMContentLoaded', () => {
     formSender.init();

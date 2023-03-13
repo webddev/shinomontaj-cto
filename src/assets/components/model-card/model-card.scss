@@ -56,17 +56,19 @@
     font-size: 16px;
     margin-top: auto;
     text-align: left;
-
-    b {
-      display: block;
-      font-size: 24px;
-      font-weight: 900;
-      margin-bottom: 5px;
-      @media (max-width: 575.98px) {
-        font-size: 18px;
-        margin-bottom: 0;
-      }
+  }
+  &__price {
+    display: block;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+      margin-bottom: 0;
     }
+  }
+  &__credit {
+    font-size: 16px;
   }
 
   &__front, &__back {

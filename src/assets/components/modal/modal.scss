@@ -1,6 +1,5 @@
 .modal {
   display: none;
-  max-width: 390px;
   height: fit-content;
   color: $black;
   background: $white;
@@ -11,6 +10,9 @@
     max-width: 490px;
   }
 
+  &_md {
+    max-width: 390px;
+  }
   &_sm {
     max-width: 300px;
   }

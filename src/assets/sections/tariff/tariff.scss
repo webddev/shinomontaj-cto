@@ -15,7 +15,10 @@
 
   &__options {
     padding-top: 30px;
-    height: 500px;
+    height: 580px;
+    @media (max-width: 1199.98px) {
+      height: 550px;
+    }
     @media (max-width: 991.98px) {
       height: 100%;
     }
