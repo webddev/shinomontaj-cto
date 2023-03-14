@@ -1,6 +1,6 @@
 import {Fancybox} from "@fancyapps/ui";
 
-const modalCallback = document.querySelectorAll('[data-modal=true]');
+const modalCallback = document.querySelectorAll('[data-modal=callback]');
 const modalElement = document.querySelector('.callback-modal');
 modalCallback.forEach((modal) => {
     modal.addEventListener('click', () => {

@@ -15,7 +15,7 @@
     </div>
     <div class="header__right">
         <a href="tel:+78005001436" class="header__phone fw-700 color-w mgo-number">8 (800) 500 - 14 - 36</a>
-        <button class="button header__button fw-500" data-modal="true">Заказать звонок</button>
+        <button class="button header__button fw-500" data-modal="callback">Заказать звонок</button>
     </div>
 </header>
 <main>
@@ -77,7 +77,7 @@
                                 <li><b>Напряжение питания:</b><br> 220В / 380В</li>
                                 <li><b>Максимальный диаметр колеса:</b> <br> 1040мм / 41”</li>
                             </ul>
-                            <button class="button model-card__back-button">
+                            <button class="button model-card__back-button" data-modal="model">
                                 <b class="model-card__price">75 000 ₽</b>
                                 <span class="model-card__credit">2500 ₽ (в кредит)</span>
                             </button>
@@ -96,7 +96,7 @@
                                 <li><b>Напряжение питания:</b><br> 220В</li>
                                 <li><b>Максимальный диаметр колеса:</b> <br> 960мм / 38”</li>
                             </ul>
-                            <button class="button model-card__back-button">
+                            <button class="button model-card__back-button" data-modal="model" data-title="NORDBERG 4638" data-img="assets/img/nord-4638.png&assets/img/nord-4638.png">
                                 <b class="model-card__price">92 790 ₽</b>
                                 <span class="model-card__credit">3 093 ₽ (в кредит)</span>
                             </button>
@@ -1173,6 +1173,7 @@
                     <li>Отправим предложение с индивидуальной скидкой</li>
                 </ul>
                 <form class="presence__form form">
+                    <input type="hidden" name="comment" value="Заявка на подбор оборудования">
                     <input type="text" name="name" class="form__input" placeholder="Ваше имя">
                     <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
                     <button type="submit" class="form__button button">Подобрать оборудование</button>
@@ -1352,6 +1353,7 @@
                         после утверждения списка оборудования.
                     </p>
                     <form class="offer-item__form form">
+                        <input type="hidden" name="comment" value="Заявка на кредит">
                         <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
                         <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
                         <button type="submit" class="form__button button">Куплю в кредит</button>
@@ -1360,9 +1362,9 @@
                         занимает менее 15 минут.
                     </div>
                     <div class="media-row">
-                        <img src="assets/img/icons/sber.svg" alt="Сбербанк">
-                        <img src="assets/img/icons/pochtabank.svg" alt="Почтабанк">
-                        <img src="assets/img/icons/tinkoff.svg" alt="Тиньков банк">
+                        <img src="assets/img/icons/sber.svg" loading="lazy" alt="Сбербанк">
+                        <img src="assets/img/icons/pochtabank.svg" loading="lazy" alt="Почтабанк">
+                        <img src="assets/img/icons/tinkoff.svg" loading="lazy" alt="Тиньков банк">
                     </div>
                 </div>
             </div>
@@ -1373,6 +1375,7 @@
                         утверждения списка оборудования.
                     </p>
                     <form class="offer-item__form form">
+                        <input type="hidden" name="comment" value="Заявка на лизинг">
                         <input type="text" name="inn" class="form__input" placeholder="ИНН" required>
                         <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
                         <button type="submit" class="form__button button">Куплю в лизинг</button>
@@ -1404,25 +1407,25 @@
                         транспортировке.
                     </li>
                 </ul>
-                <button class=" form__button button">Узнать подробнее</button>
+                <button class="form__button button" data-modal="callback">Узнать подробнее</button>
             </div>
             <div class="delivery__col">
                 <div class="swiper deliverySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/img/delivery/del1.png" alt="">
+                            <img src="assets/img/delivery/del1.png" loading="lazy" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/delivery/del2.png" alt="">
+                            <img src="assets/img/delivery/del2.png" loading="lazy" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/delivery/del3.png" alt="">
+                            <img src="assets/img/delivery/del3.png" loading="lazy" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/delivery/del4.png" alt="">
+                            <img src="assets/img/delivery/del4.png" loading="lazy" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/delivery/del5.png" alt="">
+                            <img src="assets/img/delivery/del5.png" loading="lazy" alt="">
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -1502,16 +1505,38 @@
     </div>
 </div>
 <div class="modal modal_md callback-modal">
-    <h3 class="modal__title">Заявка на </h3>
+    <h3 class="modal__title">Заказать звонок</h3>
     <p class="modal__text">
-        В ближайшее время вам перезвонит
+        Перезвоним в течение часа и дадим подробную консультацию по оборудованию
     </p>
     <form class="form">
-        <input type="hidden" name="comment" value="Заявка на ">
-        <input type="text" placeholder="Имя" name="name" class="form__input">
-        <input type="tel" placeholder="+7(___)___-__-__" name="phone" class="form__input" required>
-        <button type="submit" class="form__button button">Оставить заявку</button>
+        <input type="hidden" name="comment" value="Заявка на звонок">
+        <input type="text" placeholder="Ваше имя" name="name" class="form__input">
+        <input type="tel" placeholder="Номер телефона" name="phone" class="form__input" required>
+        <button type="submit" class="form__button button">Подобрать оборудование</button>
     </form>
+</div>
+<div class="modal good-modal">
+    <div class="row">
+        <div class="good-modal__form-block">
+            <div class="modal__title">Заявка на покупку <span class="good-model"> ЧЗАО Ш515ЕУ-52 </span></div>
+            <p class="modal__text">
+                Укажите контактные данные для менеджера
+            </p>
+            <form class="form">
+                <input type="hidden" name="comment" value="">
+                <input type="text" placeholder="Ваше имя" name="name" class="form__input">
+                <input type="tel" placeholder="Номер телефона" name="phone" class="form__input" required>
+                <button type="submit" class="form__button button">Подобрать оборудование</button>
+            </form>
+        </div>
+        <div class="good-modal__gallery swiper modalSwiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

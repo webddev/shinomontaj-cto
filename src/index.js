@@ -9,6 +9,7 @@ import './assets/components/parallax/parallax.min.js';
 import './assets/components/parallax/parallax-cust.js';
 import './assets/components/model-card/model-card.js';
 import './assets/components/modal/modal.js';
+import './assets/components/good-modal/good-modal.js';
 import './assets/components/yamap/yamap.js';
 import './assets/components/offer-item/offer-item.js';
 import './assets/sections/models/models.js';

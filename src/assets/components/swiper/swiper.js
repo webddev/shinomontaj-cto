@@ -68,6 +68,7 @@ const deliverySwiper = new Swiper(".deliverySwiper", {
     spaceBetween: 15,
     slidesPerGroup: 1,
     slidesPerView: 1,
+    preloadImages: false,
     pagination: {
         el: ".swiper-pagination",
         type: 'bullets',
