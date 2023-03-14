@@ -36,6 +36,10 @@ function throttle(func, ms) {
 
 const headerHideHandler = throttle(function() {
     const currentScrollPos = window.scrollY;
+    if (window.scrollY < 70 ){
+        header.style.transform = 'translateY(0)';
+        return
+    }
     if (prevScrollpos > currentScrollPos) {
         header.style.transform = 'translateY(0)';
     } else {

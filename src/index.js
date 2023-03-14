@@ -18,7 +18,6 @@ import MangoOffice from './assets/js/analytics/mango-office.js';
 import Envybox from './assets/js/analytics/envybox.js';
 import FormSender from './assets/js/sender.js';
 import Roistat from './assets/js/analytics/roistat.js';
-import Quiz from "./assets/components/quiz/quiz.js";
 
 const analyticsTimeout = setTimeout(() => {
     new YandexMetrika([{
@@ -44,9 +43,6 @@ const formSender = new FormSender({
     source: '',
     type: '',
 });
-
-const quiz = new Quiz();
-quiz.init();
 
 document.addEventListener('DOMContentLoaded', () => {
     formSender.init();
