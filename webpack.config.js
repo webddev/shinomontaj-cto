@@ -131,7 +131,11 @@ const config = {
     new CopyPlugin({
       patterns: [
         {
-          from: resolve(DIRNAME, 'src/assets/img/models'),
+          from: resolve(DIRNAME, 'src/assets/img/inner-modal/cars'),
+          to: resolve(DIRNAME, 'dist/assets/img'),
+        },
+        {
+          from: resolve(DIRNAME, 'src/assets/img/inner-modal/trucks'),
           to: resolve(DIRNAME, 'dist/assets/img'),
         },
       ],

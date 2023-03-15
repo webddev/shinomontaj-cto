@@ -1,0 +1,53 @@
+.tariff-modal {
+  max-width: 900px;
+  width: 100%;
+  @media (max-width: 991.98px) {
+    max-width: 600px;
+  }
+  .row {
+    gap: 60px;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  .swiper-wrapper {
+    max-width: 630px;
+    text-align: center;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      max-width: 500px;
+    }
+    @media (max-width: 575.98px) {
+      max-width: 450px;
+    }
+    @media (max-width: 500.98px) {
+      max-width: 370px;
+    }
+    @media (max-width: 425.98px) {
+      max-width: 330px;
+    }
+    @media (max-width: 370.98px) {
+      max-width: 290px;
+    }
+    .swiper-slide {
+      @media (max-width: 991.98px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        @media (max-width: 991.98px) {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+  .tariff-model {
+    .undelined {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+}

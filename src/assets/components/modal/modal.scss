@@ -9,10 +9,14 @@
   @media (min-width: 2000px) {
     max-width: 490px;
   }
+  @media (max-width: 575.98px) {
+    padding: 25px;
+  }
 
   &_md {
     max-width: 490px;
   }
+
   &_sm {
     max-width: 300px;
   }
@@ -25,6 +29,9 @@
 
     @media (min-width: 2000px) {
       font-size: 26px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 23px;
     }
   }
 
@@ -66,5 +73,5 @@
 }
 
 .compensate-for-scrollbar {
-  padding-right: 0!important;
+  padding-right: 0 !important;
 }

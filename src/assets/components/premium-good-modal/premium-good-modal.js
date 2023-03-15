@@ -1,7 +1,7 @@
 import {Fancybox} from "@fancyapps/ui";
 
-const modalButtonModel = document.querySelectorAll('[data-modal=model]');
-const modalWindowModel = document.querySelector('.good-modal');
+const modalButtonModel = document.querySelectorAll('[data-modal=premium-model]');
+const modalWindowModel = document.querySelector('.premium-good-modal');
 
 modalButtonModel.forEach((modelButton) => {
     modelButton.addEventListener('click', (event) => {
@@ -32,5 +32,3 @@ function openModal(modelButton) {
         }]);
     }
 }
-
-

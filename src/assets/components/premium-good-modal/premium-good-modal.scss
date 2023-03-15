@@ -1,0 +1,28 @@
+.premium-good-modal {
+  max-width: 950px;
+  .row {
+    gap: 60px;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  background: #000000;
+  color: $white;
+  .form__button {
+    background: $yellow;
+    color: $black;
+  }
+  .good-model {
+    color: $yellow;
+  }
+  .good-modal__photo {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 90%;
+    }
+  }
+}

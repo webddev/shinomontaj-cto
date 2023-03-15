@@ -1,26 +1,24 @@
 .good-modal {
-  max-width: 900px;
-  &__form-block {
-    max-width: 433px;
+  max-width: 740px;
+  width: 100%;
+  @media (max-width: 991.98px) {
+    max-width: 600px;
   }
-  &__gallery {
 
-  }
-  .good-model {
-    & > span {
-      color: $main-color;
-      text-decoration: underline;
+  .row {
+    gap: 60px;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 15px;
     }
   }
-}
 
-.modalSwiper {
-  .swiper-wrapper {
-    max-width: 500px;
-    text-align: center;
-
-    img {
+  &__form-block {
+    max-width: 433px;
+    @media (max-width: 991.98px) {
       max-width: 100%;
     }
   }
+
 }
