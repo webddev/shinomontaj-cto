@@ -6,6 +6,12 @@
   &__gallery {
 
   }
+  .good-model {
+    & > span {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
 }
 
 .modalSwiper {

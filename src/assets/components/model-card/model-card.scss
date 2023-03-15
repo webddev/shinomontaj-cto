@@ -56,6 +56,12 @@
     font-size: 16px;
     margin-top: auto;
     text-align: left;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      color: $main-color;
+      transition: ease-in-out 0.3s;
+    }
   }
   &__price {
     display: block;

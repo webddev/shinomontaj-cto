@@ -16,6 +16,17 @@ function openModal(modelButton) {
         modalWindowModel.querySelector('.good-model').textContent = modelButton.dataset.title;
         modalWindowModel.querySelector('input[name=comment]').value = `Заявка на ${modelButton.dataset.title}`;
     }
+
+    if (modelButton.dataset.title && modelButton.dataset.tariff) {
+        modalWindowModel.querySelector('.good-model').textContent = modelButton.dataset.title;
+        modalWindowModel.querySelector('.good-model').insertAdjacentHTML('beforeend', `<span>${modelButton.dataset.tariff}</span>`)
+        modalWindowModel.querySelector('input[name=comment]').value = `Заявка на ${modelButton.dataset.title}${modelButton.dataset.tariff}`;
+        console.log('kk')
+    }
+
+    deliverySwiper.slideTo(0);
+    deliverySwiper.update();
+
     if (modelButton.dataset.modal) {
         Fancybox.show([{
             src: modalWindowModel,
@@ -34,7 +45,7 @@ function openModal(modelButton) {
             masImg.forEach((value) => {
                 swiperWrapper.insertAdjacentHTML(
                     'beforeend',
-                    `<div class="swiper-slide"><img class="modal-slides__img" src="${value}" loading="lazy" alt="${modelButton.dataset.title}"></div>`,
+                    `<div class="swiper-slide"><img class="modal-slides__img" src="${value}" loading="lazy" alt=""></div>`,
                 );
             });
         }
