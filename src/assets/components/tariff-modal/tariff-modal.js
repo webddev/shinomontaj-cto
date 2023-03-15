@@ -15,7 +15,7 @@ function openModal(button) {
     if (button.dataset.title && button.dataset.tariff) {
         modalWindowTariff.querySelector('.tariff-model').textContent = button.dataset.title;
         modalWindowTariff.querySelector('.tariff-model').insertAdjacentHTML('beforeend', `<span class="undelined">${button.dataset.tariff}</span>`)
-        modalWindowTariff.querySelector('input[name=comment]').value = `Заявка на ${button.dataset.title}`;
+        modalWindowTariff.querySelector('input[name=comment]').value = `Покупка ${button.dataset.title}${button.dataset.tariff}`;
     }
 
     if (button.dataset.img) {
