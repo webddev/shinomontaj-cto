@@ -1,5 +1,4 @@
-// const url = 'https://centr-to.ru/api/good/prices';
-const url = 'http://192.168.4.2:8000/api/good/prices';
+const url = 'https://centr-to.ru/api/good/prices';
 
 function replacePrices(data) {
     data.forEach((item) => {

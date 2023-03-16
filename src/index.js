@@ -42,9 +42,9 @@ const envyboxTimeout = setTimeout(() => {
 
 const formSender = new FormSender({
     createLeadUrl: 'https://collector.centr-to.ru/lead/create',
-    group_id: '',
-    source: '',
-    type: '',
+    group_id: '1',
+    source: 'шиномонтажное.сто5.рф',
+    type: '1359182',
 });
 
 document.addEventListener('DOMContentLoaded', () => {

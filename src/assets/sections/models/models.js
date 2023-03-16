@@ -23,6 +23,11 @@ function showDesiredModels(branch, block) {
     const allBlocks = desiredBranch.querySelectorAll('[data-filter=true]');
     allBlocks.forEach((block) => {
         block.classList.add('hidden');
+
+        const cards = block.querySelectorAll('.model-card');
+        cards.forEach((card) => {
+            card.classList.remove('flip');
+        })
     });
     desiredBranch.querySelector(`.${block}`).classList.remove('hidden');
 }
