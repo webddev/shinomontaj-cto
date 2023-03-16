@@ -16,13 +16,6 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Diesel Zauberg">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="Nordberg Land">
         <serverdata>
           <mappings>
@@ -65,6 +58,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="Zauberg.ru">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Zoomlion-Buldozer">
         <serverdata>
           <mappings>
@@ -73,6 +73,13 @@
         </serverdata>
       </paths>
       <paths name="cto-test">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="diesel.zauberg.ru">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
