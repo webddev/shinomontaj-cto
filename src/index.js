@@ -25,14 +25,14 @@ import Roistat from './assets/js/analytics/roistat.js';
 
 const analyticsTimeout = setTimeout(() => {
     new YandexMetrika([{
-        id: 91840915,
+        id: 92833056,
         params: { webvisor: true },
     }]);
-    new MangoOffice(23176);
+    new MangoOffice(24354);
     clearTimeout(analyticsTimeout);
 }, 2000);
 
-new Roistat('8d1d08aebc35d0292c2ca7b696150b7e');
+new Roistat('52d041b22c9089f178bc2b392b9c821c');
 
 const envyboxTimeout = setTimeout(() => {
     new Envybox();
