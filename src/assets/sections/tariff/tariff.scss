@@ -19,21 +19,37 @@
     @media (max-width: 1199.98px) {
       height: 550px;
     }
+    @media (max-width: 1099.98px) {
+      height: 635px;
+    }
     @media (max-width: 991.98px) {
       height: 100%;
     }
 
     .swiper-wrapper {
-      padding-bottom: 30px;
+      padding: 0 10px 30px 10px;
+
+      @media (max-width: 1099.98px) {
+        height: 95%;
+      }
     }
 
     .model-card {
       max-width: 367px;
       border-radius: 30px;
 
+      @media (max-width: 1199.98px) {
+        max-width: 302px;
+      }
+
       &__front, &__back {
         border-radius: 30px;
         padding: 25px;
+      }
+      &__front {
+        @media (max-width: 991.98px) {
+          min-height: 554px;
+        }
       }
 
       @media (max-width: 1199.98px) {
