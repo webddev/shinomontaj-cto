@@ -32,7 +32,8 @@
 
   .text {
     color: $white;
-    max-width: 340px;
+    max-width: 500px;
+    line-height: 1.9;
     @media (max-width: 991.98px) {
       max-width: 100%;
     }
