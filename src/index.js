@@ -14,6 +14,7 @@ import './assets/components/premium-good-modal/premium-good-modal.js';
 import './assets/components/tariff-modal/tariff-modal.js';
 import './assets/components/yamap/yamap.js';
 import './assets/components/offer-item/offer-item.js';
+import './assets/components/video-widget/video-widget.js';
 import './assets/sections/models/models.js';
 import YandexMetrika from './assets/js/analytics/yandex-metrika.js';
 import createYmapsObject from "./assets/js/yandex-maps.js";
